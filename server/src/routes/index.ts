@@ -1,5 +1,5 @@
 import express from "express";
-import { getWalletBalances } from "../controllers/wallet.controllers.js";
+import { getWalletBalances, getWalletTransactions } from "../controllers/wallet.controllers.js";
 export const router = express.Router();
 
 
@@ -18,8 +18,8 @@ router.get("/health", (req,res)=>{
 
 
 
-// Get all tokens balances  given a wallet address
 
 router.get("/:address/tokens",getWalletBalances);
+router.get("/:address/transactions",getWalletTransactions);
 
 export default router;
