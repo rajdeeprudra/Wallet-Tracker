@@ -48,11 +48,12 @@ Example Endpoints :
 ## Functionalities 
 
 - Track any **Solana wallet address**
-- View **token balances and portfolio value**
+- View **token balances and portfolio value in USD**
 - Fetch **recent transaction history**
+![Transactions](screenshots/Transactions.png)
 - Display **timestamps, fees, and status**
 - **Real-time transaction updates** using WebSockets
-- Data powered by **Helius RPC and Streaming APIs**
+- Data powered by **Helius RPC**
 - **Versioned REST API (`/api/v1`)** for scalable backend design
 
 
