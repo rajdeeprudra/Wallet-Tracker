@@ -56,5 +56,21 @@ Example Endpoints :
 - Data powered by **Helius RPC**
 - **Versioned REST API (`/api/v1`)** for scalable backend design
 
+## Setup
+fork this repo and clone it 
+`git clone https://github.com/rajdeeprudra/Wallet-Tracker.git `
 
+### backend Setup
+
+ - `cd server`
+ - `npm install`
+ - `npm run dev`
+ 
+### Frontend Setup
+
+- `cd client`
+- `npm install`
+- Create a .env.local file in side client and there add the backend url as : `NEXT_PUBLIC_BACKEND_URL=http://localhost:4000`
+- `npm run dev`
+After that the app will run
 
