@@ -1,5 +1,5 @@
 import WebSocket from "ws";
-
+const apiKey = process.env.SECRET_API_KEY;
 type Subscription = {
   requestId: number;
   method: string;
