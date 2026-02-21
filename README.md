@@ -18,16 +18,16 @@ A real time solana wallet analytics dashboard that tracks Token Balances, Transa
 
 ### Backend
 
-Node js
-Express
-Typescript
-WebSocket server(ws)
-REST API Architechture
+- Node js
+- Express
+- Typescript
+- WebSocket server(ws)
+- REST API Architechture
 
 ### Blockchain & Data Infrsstructure
-Helius RPC API
-Helius WebSocket Streaming
-Solana JSON-RPC
+- Helius RPC API
+- Helius WebSocket Streaming
+- Solana JSON-RPC
 
 
 ### Frontend 
@@ -45,8 +45,15 @@ Example Endpoints :
 `GET /api/v1/:walletAddress/tokens`
 `GET /api/v1/:walletAddress/transactions`
 
+## Functionalities 
 
-
+- Track any **Solana wallet address**
+- View **token balances and portfolio value**
+- Fetch **recent transaction history**
+- Display **timestamps, fees, and status**
+- **Real-time transaction updates** using WebSockets
+- Data powered by **Helius RPC and Streaming APIs**
+- **Versioned REST API (`/api/v1`)** for scalable backend design
 
 
 
