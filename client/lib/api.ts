@@ -72,13 +72,14 @@ export async function getWalletTransactions(
       `/api/v1/${encodeURIComponent(address)}/transactions`
     );
 
-    const apiData = response.data;
+    const apiData = response.data.data || [];
 
-    const transactions = (apiData.transactions || []).map((tx: any) => ({
-      signature: tx.signature,
-      timestamp: tx.timestamp,
-      status: tx.status,
+    const transactions = apiData.map((tx:any)=>({
+      signature:tx.signature,
+      timestamp:tx.timestamp,
+      status:tx.transactionError ? "failed" : "success",
       fee: tx.fee,
+      type:tx.type,
     }));
 
     return {
